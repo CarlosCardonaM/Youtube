@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		482E1BB624ABCE310050A8CA /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482E1BB524ABCE310050A8CA /* CacheManager.swift */; };
+		4894560624ABC5C70089F6A1 /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4894560524ABC5C70089F6A1 /* VideoTableViewCell.swift */; };
 		48B675D324AAC4D60033DAE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B675D224AAC4D60033DAE5 /* AppDelegate.swift */; };
 		48B675D524AAC4D60033DAE5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B675D424AAC4D60033DAE5 /* SceneDelegate.swift */; };
 		48B675D724AAC4D60033DAE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B675D624AAC4D60033DAE5 /* ViewController.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		482E1BB524ABCE310050A8CA /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		4894560524ABC5C70089F6A1 /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
 		48B675CF24AAC4D60033DAE5 /* Youtube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Youtube.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48B675D224AAC4D60033DAE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48B675D424AAC4D60033DAE5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +49,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4894560724ABC5D50089F6A1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				48B675D624AAC4D60033DAE5 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4894560824ABC5E50089F6A1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4894560524ABC5C70089F6A1 /* VideoTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4894560924ABC5EA0089F6A1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				48B675E824AAC77D0033DAE5 /* Model.swift */,
+				48B675EA24AAC7860033DAE5 /* Video.swift */,
+				48B675EC24AAC7930033DAE5 /* Response.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4894560A24ABC5F20089F6A1 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				48B675D824AAC4D60033DAE5 /* Main.storyboard */,
+				48B675DD24AAC4D90033DAE5 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		4894560B24ABC5FB0089F6A1 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				48B675E624AAC7650033DAE5 /* Constants.swift */,
+				482E1BB524ABCE310050A8CA /* CacheManager.swift */,
+			);
+			path = helpers;
+			sourceTree = "<group>";
+		};
 		48B675C624AAC4D50033DAE5 = {
 			isa = PBXGroup;
 			children = (
@@ -66,15 +114,13 @@
 			children = (
 				48B675D224AAC4D60033DAE5 /* AppDelegate.swift */,
 				48B675D424AAC4D60033DAE5 /* SceneDelegate.swift */,
-				48B675D624AAC4D60033DAE5 /* ViewController.swift */,
-				48B675D824AAC4D60033DAE5 /* Main.storyboard */,
+				4894560B24ABC5FB0089F6A1 /* helpers */,
+				4894560A24ABC5F20089F6A1 /* Storyboards */,
+				4894560924ABC5EA0089F6A1 /* Models */,
+				4894560824ABC5E50089F6A1 /* Views */,
+				4894560724ABC5D50089F6A1 /* ViewControllers */,
 				48B675DB24AAC4D90033DAE5 /* Assets.xcassets */,
-				48B675DD24AAC4D90033DAE5 /* LaunchScreen.storyboard */,
 				48B675E024AAC4D90033DAE5 /* Info.plist */,
-				48B675E624AAC7650033DAE5 /* Constants.swift */,
-				48B675E824AAC77D0033DAE5 /* Model.swift */,
-				48B675EA24AAC7860033DAE5 /* Video.swift */,
-				48B675EC24AAC7930033DAE5 /* Response.swift */,
 			);
 			path = Youtube;
 			sourceTree = "<group>";
@@ -151,10 +197,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				48B675E924AAC77D0033DAE5 /* Model.swift in Sources */,
+				482E1BB624ABCE310050A8CA /* CacheManager.swift in Sources */,
 				48B675EB24AAC7860033DAE5 /* Video.swift in Sources */,
 				48B675D724AAC4D60033DAE5 /* ViewController.swift in Sources */,
 				48B675D324AAC4D60033DAE5 /* AppDelegate.swift in Sources */,
 				48B675D524AAC4D60033DAE5 /* SceneDelegate.swift in Sources */,
+				4894560624ABC5C70089F6A1 /* VideoTableViewCell.swift in Sources */,
 				48B675E724AAC7650033DAE5 /* Constants.swift in Sources */,
 				48B675ED24AAC7930033DAE5 /* Response.swift in Sources */,
 			);
