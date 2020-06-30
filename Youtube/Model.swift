@@ -44,7 +44,10 @@ class Model {
                 
                 if response.items != nil {
                     // Call the "videosFetched" methods of the delegate
-                    self.delegate?.videosFetched(response.items!)
+                    DispatchQueue.main.async {
+                        self.delegate?.videosFetched(response.items!)
+                    }
+                    
                 }
                 
                 dump(response)

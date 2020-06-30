@@ -64,6 +64,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         
         // Configure the cell
         
+        
         // Get the title for the video in question
         let title = self.videos[indexPath.row].title
         cell.textLabel?.text = title
