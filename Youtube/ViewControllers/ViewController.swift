@@ -18,6 +18,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        title = "WillyRex"
+        
+        
         
         tableView.delegate = self
         tableView.dataSource = self
@@ -28,6 +31,7 @@ class ViewController: UIViewController {
         model.getVideos()
     
     }
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
